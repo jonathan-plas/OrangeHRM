@@ -43,6 +43,7 @@ public class Login {
             //Btn Ingresar
             WebElement btningresar = driver.findElement(By.xpath("//BUTTON[@type='submit']"));
             btningresar.click();
+            System.out.println("Primera actualización");
 
         }
 
