@@ -45,6 +45,13 @@ public class Login {
             btningresar.click();
             System.out.println("Primera actualización");
 
+            ///Desde aqui pedir ayuda para ver como se dividen
+
+            //Sección de admin
+            wait_time_clickable("//SPAN[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][text()='Admin']");
+            WebElement secc_admin = driver.findElement(By.linkText("Admin"));
+            secc_admin.click();
+
         }
 
         public static WebElement wait_time_clickable (String soul) {
