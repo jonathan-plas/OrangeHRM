@@ -45,12 +45,17 @@ public class Login {
             btningresar.click();
             System.out.println("Primera actualización");
 
-            ///Desde aqui pedir ayuda para ver como se dividen
+            ///Desde aquí pedir ayuda para ver como se dividen
 
             //Sección de admin
             wait_time_clickable("//SPAN[@class='oxd-text oxd-text--span oxd-main-menu-item--name'][text()='Admin']");
             WebElement secc_admin = driver.findElement(By.linkText("Admin"));
             secc_admin.click();
+
+            //Filtrado de datos JOB
+            wait_time_clickable("(//SPAN[@class='oxd-topbar-body-nav-tab-item'])[2]");
+            WebElement Fil_Job = driver.findElement(By.cssSelector(" nav > ul:nth-of-type(1) > li:nth-of-type(2)"));
+            Fil_Job.click();
 
         }
 
